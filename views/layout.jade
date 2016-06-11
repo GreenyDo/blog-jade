@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title GreenyDo's blog
+    meta(http-equiv='Content-type', content='text/html', charset='utf-8')
+    // 为了移动设备的支持 viewport
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='libs/bootstrap_3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='stylesheets/home_page.css')
+    link(rel='stylesheet', href='stylesheets/homepage_aside.css')
+  body
+    .pagehead
+      p.logo GreenyDo
+      nav
+        a(href='web.html', target='_blank') Web
+        a(href='photo.html', target='_blank') Photo
+        a(href='elect.html', target='_blank') Elect
+        a(href='nba.html', target='_blank') NBA
+      #github
+        img#githubicon(src='images/GitHub.svg.png', alt='GitHub')
+        #ring.ring
+      #myemail
+        img#email(src='images/mail.svg.png', alt='email')
+        p
+          | 1023564838@qq.com
+          br
+          | Click and copy !
+    .pagemain
+      article
+        block content
+      .boundary
+      include content_aside.jade
+    footer copyright 2016
+    script(type='text/javascript', src='libs/jquery.js')
+    script(type='text/javascript', src='libs/bootstrap_3.3.5/js/bootstrap.min.js')
+    script(type='text/javascript', src='libs/jquery-ui.min.js')
+    script(type='text/javascript', src='libs/clipboard.min.js')
+    script(type='text/javascript', src='javascripts/homepage.js')
+    script(type='text/javascript', src='javascripts/homepage_aside.js')
